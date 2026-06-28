@@ -1,2 +1,2 @@
 def main() -> None:
-    print("Hello from yfjz!")
+    print("Run the API with: uv run uvicorn yfjz.app:app --reload")
