@@ -1,0 +1,100 @@
+.table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+.data-table th {
+  color: #334155;
+  background: #f8fafc;
+  font-size: 14px;
+}
+
+.text-cell,
+.text-block,
+.code-block {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.code-block {
+  margin: 0;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f6f8fb;
+}
+
+.status-badge {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 4px 9px;
+  color: #334155;
+  background: #eef2f7;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.status-badge.running {
+  color: #0f5260;
+  background: #e1f3f6;
+}
+
+.status-badge.completed,
+.status-badge.passed {
+  color: #17633a;
+  background: #e6f7ed;
+}
+
+.status-badge.failed,
+.status-badge.error {
+  color: #8f2626;
+  background: #ffe8e8;
+}
+
+.progress-track,
+.chart-row div {
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5ebf2;
+}
+
+.progress-track span,
+.bar {
+  display: block;
+  height: 10px;
+  background: #16697a;
+}
+
+.chart-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar.passed {
+  background: #237a4b;
+}
+
+.bar.failed {
+  background: #c47a2c;
+}
+
+.bar.error {
+  background: #bc3b3b;
+}

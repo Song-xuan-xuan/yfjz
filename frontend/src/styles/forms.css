@@ -1,0 +1,114 @@
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+label,
+.editor-label {
+  display: grid;
+  gap: 7px;
+  color: #263447;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #101827;
+  background: #ffffff;
+}
+
+textarea {
+  min-height: 320px;
+  resize: vertical;
+  font-family: "Cascadia Code", "Consolas", ui-monospace, monospace;
+  font-size: 14px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-field input {
+  width: 18px;
+  min-height: 18px;
+}
+
+.form-actions,
+.action-cell,
+.step-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.primary-button,
+.ghost-button,
+.danger-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+
+.primary-button {
+  color: #ffffff;
+  background: #16697a;
+}
+
+.primary-button:hover {
+  background: #0f5260;
+}
+
+.ghost-button {
+  color: #1f3a52;
+  border-color: #cbd5e1;
+  background: #ffffff;
+}
+
+.ghost-button:hover {
+  border-color: #8aa0b8;
+  background: #f1f5f9;
+}
+
+.danger-button {
+  color: #8f2626;
+  border-color: #efb3b3;
+  background: #fff4f4;
+}
+
+.danger-button:hover {
+  background: #ffe5e5;
+}
+
+.error-message,
+.info-message,
+.empty-state {
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.error-message {
+  color: #8f2626;
+  background: #fff1f1;
+}
+
+.info-message,
+.empty-state {
+  color: #315f73;
+  background: #eef7fb;
+}
+
+@media (max-width: 860px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
